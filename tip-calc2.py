@@ -1,9 +1,6 @@
-billTot = raw_input("What was the bill total? ")
-service = raw_input("How was the service? (good, fair, bad) ")
-guests = raw_input("How many people in your party?")
-billTot = int(float(billTot))
-service = service.lower()
-guests = int(guests)
+billTot = int(raw_input("What was the bill total? "))
+service = raw_input("How was the service? (good, fair, bad) ").lower()
+guests = int(raw_input("How many people in your party?"))
 if guests > 1:
     if service == "good":
         tip = billTot * .2
